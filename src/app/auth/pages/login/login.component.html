@@ -1,0 +1,16 @@
+<div>
+  <div>
+    <h1>Formulario de login</h1>
+    <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+      <div>
+        <label>Email</label>
+        <input type="text" formControlName="email" />
+      </div>
+      <div>
+        <label>Password</label>
+        <input type="text" formControlName="password" />
+      </div>
+      <input type="submit" value="Enviar" />
+    </form>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+{
+  "table": {
+    "TITLE": "Welcome to English"
+  },
+  "buttons": {
+    "english": "English",
+    "spanish": "Spanish",
+    "german": "German"
+  }
+}

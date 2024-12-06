@@ -1,0 +1,26 @@
+<div>
+  <div>
+    <h1>Lista de Usuarios</h1>
+    @if (isLoading) {
+    <div>
+      <p>Cargando usuarios...</p>
+    </div>
+    } 
+    
+    @if (!isLoading) { 
+      @if (arrayUsers.length > 0) {
+        <ul>
+          @for (user of arrayUsers; track user.id) {
+          <li>{{ user.name }} - {{ user.email }}</li>
+          }
+        </ul>
+      } @else {
+        <p>No hay usuarios para mostrar</p>
+      } 
+    }
+  </div>
+</div>
+
+<br />
+
+<button (click)="goBack()">Volver Atrás</button>

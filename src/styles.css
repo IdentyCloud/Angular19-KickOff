@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Yuji+Mai&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "DMSans";
+  src: url("assets/fonts/DMSans-Regular.woff2") format("woff2"),
+    url("assets/fonts/DMSans-Regular.woff") format("woff"),
+    url("assets/fonts/DMSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DMSans";
+  src: url("assets/fonts/DMSans-Bold.woff2") format("woff2"),
+    url("assets/fonts/DMSans-Bold.woff") format("woff"),
+    url("assets/fonts/DMSans-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  font-family: "DMSans", sans-serif;
+}

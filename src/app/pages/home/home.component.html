@@ -1,0 +1,26 @@
+<h3 class="my-4 titulo-custom-fonts">Home page</h3>
+
+<p>{{ "table.TITLE" | translate }}</p>
+
+<div class="flex align-middle gap-4 my-4">
+  <button (click)="changeLanguage('en')">
+    {{ "buttons.english" | translate }}
+  </button>
+  <button (click)="changeLanguage('es')">
+    {{ "buttons.spanish" | translate }}
+  </button>
+  <button (click)="changeLanguage('de')">
+    {{ "buttons.german" | translate }}
+  </button>
+</div>
+
+<div class="flex align-middle gap-4 my-4">
+  <button (click)="goToLogin()">Login</button>
+  <button (click)="goToRegister()">Register</button>
+</div>
+
+<div class="flex align-middle gap-4">
+  <button (click)="goToUsers()" class="font-bold">Users</button>
+  <button (click)="goToDashboard()" class="font-bold">Dashboard</button>
+  <button (click)="goToProfile()" class="font-bold">Profile</button>
+</div>
